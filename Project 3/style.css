@@ -1,0 +1,15 @@
+
+.ul {
+    list-style-type:"-" ;
+}
+table, td, th {
+  border-collapse: collapse;
+    border: 5px double black;
+    padding: 5px;
+}
+td {
+    font-size: 24px;
+}
+th {
+    font-size: 28px;
+}
