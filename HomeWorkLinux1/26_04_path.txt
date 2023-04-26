@@ -1,0 +1,12 @@
+   0 -p /opt/test/artur
+   1 mkdir -p /home/user/start 
+   2 touch /home/user/start/1.txt
+   3 echo "Start" > /home/user/start/1.txt
+   4 date >> /home/user/start/1.txt
+   5 mkdir -p /opt/task
+   6 cp /home/user/start/1.txt /opt/task/start.txt
+   7 tail -n 4 /* >> /opt/task/start.txt
+   8 tail -n 4 /* | grep -v "^/\.|^/dev" >> /opt/task/start.txt
+   9 cp /home/user/documents/file.txt /home/user/Desktop/
+  10 export_file 26_04_path.txt
+  11 history > 26_04_path.txt
