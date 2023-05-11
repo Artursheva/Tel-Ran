@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task 1</title>
+	<style type="text/css">
+		.square {
+			width: 200px;
+			height: 200px;
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<button id="btn">Click me</button>
+	<div id="square" class="square"></div>
+	<script type="text/javascript">
+		var btn = document.getElementById("btn");
+		var square = document.getElementById("square");
+		btn.addEventListener("click", function() {
+			square.style.backgroundColor = "green";
+			square.style.width = "100px";
+			square.style.height = "100px";
+		});
+	</script>
+</body>
+</html>
+
+
+2.
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task 2</title>
+	<style type="text/css">
+		.square {
+			width: 200px;
+			height: 200px;
+			background-color: pink;
+		}
+	</style>
+</head>
+<body>
+	<button id="btn">Click me</button>
+	<div id="square" class="square"></div>
+	<script type="text/javascript">
+		var btn = document.getElementById("btn");
+		var square = document.getElementById("square");
+		btn.addEventListener("click", function() {
+			square.style.backgroundColor = "blue";
+			console.log(square.style.backgroundColor);
+		});
+	</script>
+</body>
+</html>
+3.
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task 4</title>
+	<style>
+		.square {
+			width: 150px;
+			height: 150px;
+			background-color: blue;
+		}
+	</style>
+</head>
+<body>
+	<button id="btn">Увеличить квадрат</button>
+	<div id="square" class="square"></div>
+	<script>
+		var btn = document.getElementById("btn");
+		var square = document.getElementById("square");
+
+		btn.addEventListener("click", function() {
+			var currentWidth = square.offsetWidth;
+			var currentHeight = square.offsetHeight;
+			square.style.width = (currentWidth + 20) + "px";
+			square.style.height = (currentHeight + 20) + "px";
+		});
+	</script>
+</body>
+</html>
+4.
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task 5</title>
+	<style>
+		#root {
+			width: 400px;
+			height: 200px;
+			border: 1px solid black;
+			padding: 20px;
+		}
+	</style>
+</head>
+<body>
+	<button id="btn">Добавить параграф</button>
+	<div id="root"></div>
+	<script>
+		var btn = document.getElementById("btn");
+		var root = document.getElementById("root");
+
+		btn.addEventListener("click", function() {
+			var paragraph = document.createElement("p");
+			paragraph.style.color = "blue";
+			paragraph.textContent = "Произвольный текст";
+			root.appendChild(paragraph);
+		});
+	</script>
+</body>
+</html>
+5.
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task 6</title>
+	<style>
+		#root {
+			width: 400px;
+			height: 200px;
+			border: 1px solid black;
+			padding: 20px;
+		}
+		.blue {
+			color: blue;
+		}
+		.green {
+			color: green;
+		}
+	</style>
+</head>
+<body>
+	<button id="btn">Добавить параграф</button>
+	<div id="root"></div>
+	<script>
+		var btn = document.getElementById("btn");
+		var root = document.getElementById("root");
+		var colors = ["blue", "green"];
+		var currentColorIndex = 0;
+
+		btn.addEventListener("click", function() {
+			var paragraph = document.createElement("p");
+			paragraph.classList.add(colors[currentColorIndex]);
+			paragraph.textContent = "Произвольный текст";
+			root.appendChild(paragraph);
+			currentColorIndex = (currentColorIndex + 1) % colors.length;
+		});
+	</script>
+</body>
+</html>
