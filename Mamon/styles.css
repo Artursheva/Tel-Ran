@@ -1,0 +1,234 @@
+body {
+  font-family: 'ubuntu';
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1181px;
+  height: 58px;
+  margin: 53px 10% 117px 7%;
+}
+
+.logo-container {
+  display: flex;
+  gap: 25px;
+}
+
+.list-container {
+  display: flex;
+  list-style: none;
+  gap: 37px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #202020;
+}
+
+.list-container a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #202020;
+}
+
+.nav-button {
+  border: none;
+  background: #5528ff;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  width: 100px;
+  height: 24px;
+  color: #ffffff;
+}
+
+/* content */
+
+.content-container {
+  margin: 0 10% 100px 7%;
+}
+
+.content-container h1 {
+  color: #202020;
+  font-size: 57px;
+  font-weight: 700;
+}
+
+.content-container p {
+  color: #4f4f4f;
+  font-size: 32px;
+  line-height: 161%;
+  max-width: 741px;
+}
+
+.content-container button {
+  border: none;
+  width: 235px;
+  height: 60px;
+  border-radius: 10px;
+  background: #5528ff;
+  color: #fff;
+  font-size: 24px;
+}
+/* Services */
+.services-container {
+  position: relative;
+  border-top: 1px solid #c2c2c2;
+  padding: 100px 7% 0 7%;
+  margin-bottom: 107px;
+  display: flex;
+  gap: 82px 258px;
+  flex-wrap: wrap;
+}
+.services-container::before {
+  position: absolute;
+  top: -8px;
+  background: #ffffff;
+  padding: 0 39px 0 19px;
+  content: 'OUR SERVICES';
+  color: #c2c2c2;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+ 
+}
+.service-container {
+  display: flex;
+  align-items: center;
+  gap: 44px;
+}
+.service-container img {
+  width: 80px;
+  height: 60px;
+}
+.service-container h2 {
+  color: #000;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.service-container p {
+  max-width: 309px;
+  color: #b2b2b2;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* footer */
+.footer-container {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  padding: 20px 10% 20px 7%;
+  justify-content: space-between;
+  background: #f7f7f7;
+  
+}
+
+.socialmedia-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.clients-container {
+  position: relative;
+  border-top: 1px solid #c2c2c2;
+  padding: 100px 7% 0 7%;
+  margin-bottom: 109px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 62px 150px;
+  
+}
+.clients-container::before {
+  margin-left: 7%;
+  background: #ffffff;
+  padding: 0 39px 0 17px;
+  position: absolute;
+  top: -8px;
+  content: 'OUR CLIENTS';
+  color: #c2c2c2;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  
+}
+.employees-container {
+  position: relative;
+  border-top: 1px solid #c2c2c2;
+  padding: 100px 7% 0 7%;
+  margin-bottom: 109px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 62px 150px;
+  
+}
+
+.employees-container::before {
+  
+  margin-left: 8%;
+  background: #ffffff;
+  padding: 0 35px 0 17px;
+  position: absolute;
+  top: -8px;
+  content: 'OUR TEAM';
+  color: #c2c2c2;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+
+.employees-container {
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px 150px;
+  margin-left: -11px;
+  margin-bottom: 100px;
+}
+.employee-container {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+.employee-container img {
+  width: 80px;
+  height: 60px;
+  border-radius: 50%;
+}
+.employee-container p {
+  color: #B2B2B2;
+font-size: 14px;
+font-family: Ubuntu;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+}
+.employee-container h3 {
+  color: #202020;
+font-size: 28px;
+font-family: Ubuntu;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
