@@ -1,0 +1,23 @@
+<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="15" height="15" fill="#1E1E1E"/>
+<rect width="1920" height="2441.42" transform="translate(-1725 -66.5)" fill="white"/>
+<rect width="1920" height="376.67" transform="translate(-1725 -34.5)" fill="#3B2F63"/>
+<rect width="1920" height="376.67" transform="translate(-1725 -34.5)" fill="url(#paint0_radial_0_1)"/>
+<rect width="1920" height="376.67" transform="translate(-1725 -34.5)" fill="url(#paint1_radial_0_1)"/>
+<rect x="-121.11" y="-8.5" width="145" height="33.55" rx="4" fill="white" fill-opacity="0.1"/>
+<rect x="0.890015" y="0.5" width="14" height="14" fill="url(#pattern0)"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_0_1" transform="scale(0.0714286)"/>
+</pattern>
+<radialGradient id="paint0_radial_0_1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(960 188.335) rotate(11.0995) scale(978.3 369.624)">
+<stop stop-color="#794AA2"/>
+<stop offset="0.57" stop-color="#794AA2" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="paint1_radial_0_1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(960 188.335) rotate(11.0995) scale(978.3 369.624)">
+<stop stop-color="#545AB6" stop-opacity="0.6"/>
+<stop offset="0.75" stop-color="#545AB6" stop-opacity="0"/>
+</radialGradient>
+<image id="image0_0_1" width="28" height="28" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAACgElEQVR42sWVv04bQRCHXdOiIKXhEXgLhOhoeAVHKajyCuBXMC9BA1JkiP9Iln1uKCisWNi+vbMS7qChCOA7iYLMJ3al1ea8h8gpWWkEOzPsd/PbGbZWtM7OLteCbtQIemoW9KLlqKuu5Gez3/r+sVb16rfV1qinpqNe9CKQJOiqlgCv9f5+0JnvVgajMmBUJRXW7digrbYFfAvUrnTwLdwUJU77X2cf3PPwESOnEIiMupJPRXGgOt40Pg7EJ387BmDD8BEjpxCopUx9KiAvd2r2w/P5BgfbUMz1FR72KqU69wG5U/Jsnw0Qm8jvEx/MljSkM31AGsnkuFBggDCgBuYBhsc6eWfFB9V1vFEENJVpKweOOurg9UB150JpJKTknunmVZJqaLmkQUfti1TPJBpDOgFc0EjsgTGnHpinaXywjjrU8ipT1bCrjuzK3j0WQXu+Z8OGPfWl9ublH3xGxhl85io68cCqX+32ZB3osBN+rv2vlVwma8kia6SLbJYs8mUS51eyb8bxU/WvxQ/1uCWQabrIX9I4SwTUEuA1e/Hfp3G+W2llwKhKrG7HblS+LR9wC9SuNAmzTfmY03T28EfT4CNGTjEQGakkygtfC6DEkdf4OBCf2BiAAxsTI6cYiJRx5n0tkJc7Nfv5/GGDg20o5vpWAJEy874W3Cl5ts8BTLASmJEnC+lMH5BGsnIcqAYZMLCSrz/Wd7izQoE6ce66EuDNIj/Q43DnQmkk3b1TuvkvJUXO5b4kPOtEbQx+dkEjsQfGnHpgnqbxwJI4O0ReASlTlfiO7MreORZI9bRnw9J4+cZ/4OWDz8i4g89cnXhg1a+fk1/rCdAo/yevxW9VRCQ8eA1DmAAAAABJRU5ErkJggg=="/>
+</defs>
+</svg>
