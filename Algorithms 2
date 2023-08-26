@@ -1,0 +1,84 @@
+1.function sumDivisibleByMWithLoop(n, m) {
+  let sum = 0;
+  for (let i = 1; i <= n; i++) {
+    if (i % m === 0) {
+      sum += i;
+    }
+  }
+  return sum;
+}
+
+const n = 10;
+const m = 3;
+const resultWithLoop = sumDivisibleByMWithLoop(n, m);
+console.log(resultWithLoop);
+
+2.function sumDivisibleByMWithRecursion(n, m) {
+  if (n === 0) {
+    return 0;
+  }
+  if (n % m === 0) {
+    return n + sumDivisibleByMWithRecursion(n - 1, m);
+  }
+  return sumDivisibleByMWithRecursion(n - 1, m);
+}
+
+const n = 10;
+const m = 3;
+const resultWithRecursion = sumDivisibleByMWithRecursion(n, m);
+console.log(resultWithRecursion);
+
+
+3.function sequenceElement(n) {
+  if (n === 0 || n === 1) {
+    return 1;
+  } else if (n % 2 === 0) {
+    const half = n / 2;
+    return sequenceElement(half) + sequenceElement(half - 1);
+  } else {
+    const half = Math.floor(n / 2);
+    return sequenceElement(half) - sequenceElement(half - 1);
+  }
+}
+
+const n = 5;
+const result = sequenceElement(n);
+console.log(`a(${n}) = ${result}`);
+
+
+4.function sequenceElementRecursive(n) {
+  if (n === 0 || n === 1) {
+    return n === 0 ? 2 : 0;
+  } else if (n % 2 === 0) {
+    return sequenceElementRecursive(n - 1) + sequenceElementRecursive(n - 2);
+  } else {
+    return sequenceElementRecursive(n - 1) - sequenceElementRecursive(n - 2);
+  }
+}
+
+// Примer
+const n = 5;
+const resultRecursive = sequenceElementRecursive(n);
+console.log(`a(${n}) = ${resultRecursive}`);
+
+
+5.function sequenceElementMemoized(n, memo = {}) {
+  if (n in memo) {
+    return memo[n];
+  }
+  
+  if (n === 0 || n === 1) {
+    return n === 0 ? 2 : 0;
+  } else if (n % 2 === 0) {
+    memo[n] = sequenceElementMemoized(n - 1, memo) + sequenceElementMemoized(n - 2, memo);
+  } else {
+    memo[n] = sequenceElementMemoized(n - 1, memo) - sequenceElementMemoized(n - 2, memo);
+  }
+  
+  return memo[n];
+}
+
+// Пример использования
+const n = 5;
+const resultMemoized = sequenceElementMemoized(n);
+console.log(`a(${n}) = ${resultMemoized}`);
