@@ -1,0 +1,34 @@
+function findKthElementInSortedArrays(array1, array2, k) {
+  const mergedArray = [];
+  let i = 0;
+  let j = 0;
+
+  while (i < array1.length && j < array2.length) {
+    if (array1[i] < array2[j]) {
+      mergedArray.push(array1[i]);
+      i++;
+    } else {
+      mergedArray.push(array2[j]);
+      j++;
+    }
+  }
+
+  while (i < array1.length) {
+    mergedArray.push(array1[i]);
+    i++;
+  }
+
+  while (j < array2.length) {
+    mergedArray.push(array2[j]);
+    j++;
+  }
+
+  return mergedArray[k - 1];
+}
+
+const array1 = [100, 112, 256, 349, 770];
+const array2 = [72, 86, 113, 119, 265, 445, 892];
+const k = 7;
+
+const kthElement = findKthElementInSortedArrays(array1, array2, k);
+console.log("k-й элемент:", kthElement);
