@@ -1,0 +1,419 @@
+1.const array = [1, 2, 3, 4, 5];
+
+array.forEach(element => {
+  console.log(element);
+});
+2.const originalArray = [1, 2, 3, 4, 5];
+const multiplier = 2;
+const multipliedArray = [];
+
+originalArray.forEach(element => {
+  const multipliedElement = element * multiplier;
+  multipliedArray.push(multipliedElement);
+});
+
+console.log(multipliedArray);
+3.const originalArray = [1, 2, 3, 4, 5];
+const filteredArray = originalArray.filter(element => element % 2 === 0);
+
+console.log(filteredArray);
+4.const originalArray = [1, 2, 3, 4, 5];
+const updatedArray = originalArray.map(element => element * 2);
+
+console.log(updatedArray);
+5.const array = [3, 8, 1, 6, 2, 10];
+
+const max = array.reduce((acc, current) => {
+  return Math.max(acc, current);
+}, -Infinity);
+
+console.log("Максимальное значение:", max);
+6.const originalArray = [1, 2, 3, 4, 5];
+
+const newArray = originalArray.map(element => element * 2);
+
+console.log(newArray);
+7.const array = [1, 2, 3, 4, 5];
+
+const sum = array.reduce((accumulator, current) => {
+  return accumulator + current;
+}, 0);
+
+console.log("Промежуточная сумма:", sum);
+8.const arrayOfObjects = [
+  { id: 1, name: "Alice", age: 25 },
+  { id: 2, name: "Bob", age: 30 },
+  { id: 3, name: "Charlie", age: 28 }
+];
+
+const selectedPropertiesArray = arrayOfObjects.map(obj => {
+  return { id: obj.id, name: obj.name };
+});
+
+console.log(selectedPropertiesArray);
+9.const array = [1, 2, 2, 3, 4, 4, 5, 5];
+
+const uniqueArray = array.filter((element, index, self) => {
+  return self.indexOf(element) === index;
+});
+
+console.log(uniqueArray);
+10.const array = [
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 30 },
+  { name: "Charlie", age: 28 },
+  { name: "David", age: 25 }
+];
+
+const groupedByAge = array.reduce((result, element) => {
+  const age = element.age;
+  if (!result[age]) {
+    result[age] = [];
+  }
+  result[age].push(element);
+  return result;
+}, {});
+
+console.log(groupedByAge);
+11.const array = [5, 2, 8, 1, 3];
+
+// Сортировка по возрастанию
+const ascendingSortedArray = array.slice().sort((a, b) => a - b);
+
+console.log("По возрастанию:", ascendingSortedArray);
+
+// Сортировка по убыванию
+const descendingSortedArray = array.slice().sort((a, b) => b - a);
+
+console.log("По убыванию:", descendingSortedArray);
+12.const array = [1, 2, 3, 4, 5];
+
+array.forEach(element => {
+  const listItem = document.createElement("li");
+  listItem.textContent = `Элемент: ${element}`;
+  document.getElementById("myList").appendChild(listItem);
+});
+13.const array1 = [1, 2, 3];
+const array2 = [4, 5, 6];
+const combinedArray = [];
+
+array1.forEach(element => {
+  combinedArray.push(element);
+});
+
+array2.forEach(element => {
+  combinedArray.push(element);
+});
+
+console.log(combinedArray);
+14.const nestedArrays = [[1, 2], [3, 4], [5, 6]];
+const combinedArray = [];
+
+nestedArrays.forEach(innerArray => {
+  innerArray.forEach(element => {
+    combinedArray.push(element);
+  });
+});
+
+console.log(combinedArray);
+15.const obj = {
+  name: "Alice",
+  age: 25,
+  city: "New York"
+};
+
+const keyValuePairs = [
+  ["age", 30],
+  ["city", "San Francisco"]
+];
+
+keyValuePairs.forEach(pair => {
+  const key = pair[0];
+  const value = pair[1];
+  obj[key] = value;
+});
+
+console.log(obj);
+16.function callbackForEach(element) {
+ 
+  if (element > 3) {
+    return false;
+  }
+  return true;
+}
+
+const array = [1, 2, 3, 4, 5];
+
+array.forEach(element => {
+  const result = callbackForEach(element);
+  if (!result)
+});
+17.const array = [10, 20, 30, 40, 50];
+
+const sum = array.reduce((accumulator, current) => accumulator + current, 0);
+const average = sum / array.length;
+
+console.log("Среднее значение:", average);
+18.const array = [5, 10, 15, 20, 25];
+const threshold = 15;
+
+const filteredArray = array.filter(element => element <= threshold);
+
+console.log("Отфильтрованный массив:", filteredArray);
+19.const array = [2, 4, 6, 8, 10];
+const criterion = 6;
+
+const newArray = array.filter(element => element > criterion);
+
+console.log("Новый массив:", newArray);
+20.const array = [
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 30 },
+  { name: "Charlie", age: 28 }
+];
+
+array.forEach(element => {
+  element.updated = true; // Добавляем новое свойство `updated` к каждому объекту
+});
+
+console.log(array);
+21.const array = ["Hello", " ", "world", "!"];
+let combinedString = "";
+
+array.forEach(element => {
+  combinedString += element; // Объединяем строки
+});
+
+console.log(combinedString);
+22.const arrayOfObjects = [
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 30 },
+  { name: "Charlie", age: 28 }
+];
+
+const newArray = [];
+const newProperty = "newProperty";
+
+arrayOfObjects.forEach(element => {
+  const newObject = { ...element, [newProperty]: true };
+  newArray.push(newObject);
+});
+
+console.log(newArray);
+23.const array = [1, 2, 2, 3, 2, 4, 5];
+const elementToCount = 2;
+let count = 0;
+
+array.forEach(element => {
+  if (element === elementToCount) {
+    count++;
+  }
+});
+
+console.log(`Элемент ${elementToCount} встречается ${count} раз(а)`);
+24.const arrayOfObjects = [
+  { value: 10 },
+  { value: 20 },
+  { value: 30 }
+];
+
+let sum = 0;
+
+arrayOfObjects.forEach(object => {
+  sum += object.value; // Суммируем значения свойства `value`
+});
+
+console.log("Сумма значений:", sum);
+25.const array = [1, 2, 3, 4, 5];
+const criteria = 3;
+
+const newArray = [];
+
+array.forEach(element => {
+  if (element !== criteria) {
+    newArray.push(element); // Добавляем элементы, не соответствующие критерию, в новый массив
+  }
+});
+
+console.log(newArray);
+26.const array = [1, 2, 3, 4, 5];
+const booleanArray = [true, false, true, false, true];
+const mappedArray = [];
+
+array.forEach((element, index) => {
+  if (booleanArray[index]) {
+    mappedArray.push(element); // Добавляем элементы из `array` на соответствующих позициях в `booleanArray`
+  }
+});
+
+console.log(mappedArray);
+27.const array = [2, 4, 6, 8, 9];
+const criteria = 3;
+let foundElement = null;
+
+array.forEach(element => {
+  if (element === criteria && foundElement === null) {
+    foundElement = element; // Находим первый элемент, соответствующий критерию
+  }
+});
+
+console.log("Найденный элемент:", foundElement);
+28.const arrayOfObjects = [
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 30 },
+  { name: "Charlie", age: 28 }
+];
+
+const filteredArray = [];
+
+arrayOfObjects.forEach(object => {
+  if (object.age >= 28) {
+    filteredArray.push(object); // Добавляем объекты, удовлетворяющие условию, в новый массив
+  }
+});
+
+console.log(filteredArray);
+29.const array = [1, 2, 3, 4, 5];
+const criteria = 3;
+
+array.forEach((element, index) => {
+  if (element === criteria) {
+    array.splice(index, 1); // Удаляем элементы, соответствующие критерию, из массива
+  }
+});
+
+console.log(array);
+30.const arrayOfObjects = [
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 30 },
+  { name: "Charlie", age: 28 }
+];
+
+const newArray = [];
+
+arrayOfObjects.forEach(object => {
+  const newObject = { ...object, additionalProperty: true };
+  newArray.push(newObject); // Создаем новые объекты с добавленным свойством
+});
+
+console.log(newArray);
+31.const arrayOfObjects = [
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 30 },
+  { name: "Charlie", age: 25 }
+];
+
+const groupedByAge = {};
+
+arrayOfObjects.forEach(object => {
+  const age = object.age;
+  if (!groupedByAge[age]) {
+    groupedByAge[age] = [];
+  }
+  groupedByAge[age].push(object); // Группируем объекты по возрасту
+});
+
+console.log(groupedByAge);
+32.const arrayOfObjects = [
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 30 },
+  { name: "Charlie", age: 28 }
+];
+
+const newArray = [];
+
+arrayOfObjects.forEach(object => {
+  if (object.age >= 28) {
+    newArray.push(object); // Добавляем объекты, удовлетворяющие условию, в новый массив
+  }
+});
+
+console.log(newArray);
+33.const array = [2, 3, 4, 5];
+let product = 1;
+
+array.forEach(element => {
+  product *= element; // Вычисляем произведение чисел
+});
+
+console.log("Произведение:", product);
+34.const array = [10, 20, 30, 40, 50];
+const elementToFind = 30;
+let foundIndex = -1;
+
+array.forEach((element, index) => {
+  if (element === elementToFind && foundIndex === -1) {
+    foundIndex = index; // Находим первый индекс элемента
+  }
+});
+
+console.log("Первый индекс элемента:", foundIndex);
+35.const array1 = [1, 2, 3];
+const array2 = [4, 5, 6];
+const combinedArray = [];
+
+array1.forEach(element => {
+  combinedArray.push(element);
+});
+
+array2.forEach(element => {
+  combinedArray.push(element);
+});
+
+console.log(combinedArray);
+36.const array = [1, 2, 3, 4, 5, 6];
+let sum = 0;
+
+array.forEach(element => {
+  if (element % 2 === 0) {
+    sum += element; // Суммируем четные числа
+  }
+});
+
+console.log("Сумма четных чисел:", sum);
+37.const array = [0, false, "", null, undefined, NaN, 1, "hello", true];
+const filteredArray = [];
+
+array.forEach(element => {
+  if (element) {
+    filteredArray.push(element); // Удаляем ложные значения
+  }
+});
+
+console.log(filteredArray);
+38.const array = [1, 2, 3];
+const arrayOfObjects = [{ value: 1 }, { value: 2 }, { value: 3 }];
+const newArray = [];
+
+array.forEach((element, index) => {
+  const newObject = { number: element, object: arrayOfObjects[index] };
+  newArray.push(newObject); // Сопоставляем элементы массива с объектами
+});
+
+console.log(newArray);
+39.const array = [2, 4, 6, 8, 9];
+const criteria = 6;
+let foundIndex = -1;
+
+array.forEach((element, index) => {
+  if (element === criteria) {
+    foundIndex = index; // Находим индекс последнего элемента, соответствующего критерию
+  }
+});
+
+console.log("Индекс последнего элемента:", foundIndex);
+40.const arrayOfObjects = [
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 30 },
+  { name: "Charlie", age: 28 }
+];
+const nameToUpdate = "Bob";
+const updatedAge = 35;
+
+arrayOfObjects.forEach(object => {
+  if (object.name === nameToUpdate) {
+    object.age = updatedAge; // Обновляем возраст для объекта с определенным именем
+  }
+});
+
+console.log(arrayOfObjects);
